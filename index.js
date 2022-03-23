@@ -37,6 +37,8 @@ app.post('/webhook', (req, res) => {
 
 });
 
+console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+
 // Adds support for GET requests to our webhook
 app.get('/webhook', (req, res) => {
 
