@@ -14,6 +14,8 @@ var listener = app.listen(1337, () => console.log('Listening on port ' + listene
 // Creates the endpoint for our webhook 
 app.post('/webhook', (req, res) => {
 
+    console.log("aa")
+
     let body = req.body;
 
     // Checks this is an event from a page subscription
@@ -37,10 +39,10 @@ app.post('/webhook', (req, res) => {
 
 });
 
-console.log("bb")
-
 // Adds support for GET requests to our webhook
 app.get('/webhook', (req, res) => {
+
+    console.log("bb")
 
     // Your verify token. Should be a random string.
     let VERIFY_TOKEN = process.env.VERIFY_TOKEN;
